@@ -1,0 +1,148 @@
+.about-developer-container{
+    .content{
+        color: var(--dark-grey);
+        font-family: var(--main-font);
+        padding-top: 1%;
+        padding-left: 2%;
+        display: flex;
+        align-items: center;
+
+        .mobile-top-section{
+            display: none;
+        }
+        .download-cv-section{
+            flex:1;
+            .botton-section{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+
+                button,a{
+                    font-size: 13px;
+                    color: white;
+                    width: 120px;
+                    height: 42px;
+                    background: linear-gradient(270deg, #BBAACC -24.68%, #9147A0 -24.68%, #DA4CA6 -9.78%, #554CB0 53.28%, #374EB8 64.18%, #007AEB 85.39%);
+                    border-radius: 9px;
+                    border: 0.1px solid rgb(126, 126, 126);
+                    transition: all .7s ease-out;
+                    
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                }
+                a:hover,button:hover{
+                    background: linear-gradient(100deg, #BBAACC -24.68%, #9147A0 -24.68%, #DA4CA6 -9.78%, #554CB0 53.28%, #374EB8 64.18%, #007AEB 85.39%);
+                    border: 1px solid rgb(0, 0, 0);
+                    cursor: pointer;
+                    
+                }
+            }
+            .web-development-stack{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                .symfony{
+                    width: 42px;
+                    height: 42px;
+                    margin-right: 10px;
+                }
+                .angular{
+                    width: 40px;
+                    height: 42px;
+                    margin-right: 10px;
+                }
+                .expressJs{
+                    width: 80px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+                .typescript{
+                    width: 42px;
+                    height: 42px;
+                }
+                .css{
+                    width: 54px;
+                    height: 50px;
+                }
+            }
+            
+        }
+        .right-section{
+            background-image: url('/assets/img/developer-photo-container.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 90%;
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .developer-photo{
+                height: 65vh;
+                width: 28vw;
+            }
+        }
+
+    }
+}
+
+@media(max-width: 900px){
+    .about-developer-container{
+        .content{
+            flex-direction: column;
+            .right-section{
+                display: none;
+            }
+            .mobile-top-section{
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url('/assets/img/developer-photo-container.png');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 90%;
+                flex:1;
+            .developer-photo{
+                height: 35vh;
+                width: 45vw;
+            }
+            }
+            .download-cv-section{
+                justify-content: center;
+            }
+        }
+
+}
+}
+
+@media(max-width: 389px){
+    .about-developer-container{
+        .content{
+            flex-direction: column;
+            .download-cv-section{
+                font-size: 13px;
+            }   
+            .mobile-top-section{
+                
+            .developer-photo{
+                height: 28vh;
+                width: 43vw;
+            }
+            }
+            .download-cv-section{
+                justify-content: center;
+
+                .mobile-illiminate{
+                        display: none;
+                    }
+                
+            }
+        }
+
+}
+}
+

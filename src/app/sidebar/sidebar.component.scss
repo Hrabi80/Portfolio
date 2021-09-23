@@ -1,0 +1,76 @@
+.sidebar-container{
+    color: #282828;
+    position: fixed;
+    left: 3.5%;
+    top: 10%;
+    width: 62px;
+    height: auto;
+    background: #fcfcfc;
+    border-radius: 12px;
+    padding: 18px 3px 18px 3px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .sidebar-item.mobile-only{
+        display: none;
+    }
+    .sidebar-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-family: var(--main-font);
+        transition: all .7s ease-in-out;
+        i{
+            font-size: 18.5px;
+            margin-bottom: 5px;
+        }
+        span{
+            font-size: 10px;
+        }
+        button{
+            font-size: 7px;
+            color: white;
+            width: 45px;
+            height: 32px;
+            background: linear-gradient(270deg, #BBAACC -24.68%, #9147A0 -24.68%, #DA4CA6 -9.78%, #554CB0 53.28%, #374EB8 64.18%, #007AEB 85.39%);
+            border-radius: 2px;
+            border: 0.1px solid rgb(126, 126, 126);
+            transition: all .3s ease;
+        }
+        button:hover{
+            background: linear-gradient(100deg, #BBAACC -24.68%, #9147A0 -24.68%, #DA4CA6 -9.78%, #554CB0 53.28%, #374EB8 64.18%, #007AEB 85.39%);
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            border-radius: 0%;
+        }
+        
+    }
+    .sidebar-item:hover{
+        margin-bottom: 19px;
+        i{
+            font-size: 20.5px;
+            margin-bottom: 5px;
+        }
+        span{
+            font-size: 13px;
+        }
+    }
+    .sidebar-item.activated{
+        background-image: url('/assets/img/Vector.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 85%;
+        color: var(--pink)
+    }
+}
+
+@media(max-width: 700px){
+    .sidebar-container{
+        display: none;
+    }
+}

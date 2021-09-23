@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "cc8e8eb6-c19d-4245-a834-422d0b0697c3"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -46,7 +49,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "6kb"
                 }
               ],
               "fileReplacements": [

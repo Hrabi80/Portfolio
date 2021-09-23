@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+// @import "./assets/font-awsome/fontawesome.css";
+// @import "./assets/font-awsome/brands.css";
+// //@import "./assets/font-awsome/regular.css";
+// @import "./assets/font-awsome/solid.css";
+
+body{
+    background-image: url('/assets/img/background-sunset-theme.jpg') ; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+:root 
+{
+ --blue: rgb(212, 23, 23); 
+ --main-font : 'Josefin Sans', sans-serif;
+ --pink :#DA4CA6;
+ --dark-grey : #282828;
+}
+
