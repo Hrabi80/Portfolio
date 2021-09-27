@@ -198,7 +198,7 @@
        align-items: left;
        flex-direction: column;
        padding: 20px 12px 20px 12px;
-       height: 30%;
+       height: 50%;
        overflow-y: auto;
        .line-description{
          display: flex;
@@ -423,6 +423,28 @@
   }
   
 }
+@media(max-width: 628px){
+
+  .internships-mobile{
+    display: block;
+    margin-top: 20px;
+    height: 50vh;
+    overflow-y: auto;
+    border-radius: 1%;
+    font-family: var(--main-font);
+    .intern{
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
+      background-color: var(--nav-color);
+      margin-bottom: 15px;
+      box-shadow: 0px 2px 0px 0px rgba(14, 14, 14, 0.2);
+      .entreprise-img-container{
+        display: none;
+      }
+
+}
+  }}
 @media(max-width : 530px){
   .experience-elements-container{
     display: none;

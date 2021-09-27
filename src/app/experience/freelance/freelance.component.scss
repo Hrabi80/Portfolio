@@ -1,0 +1,245 @@
+.internships{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    .intern{
+      background-color: white;
+      position: relative;
+      width: 20vw;
+      height: 40vh;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      margin-right: 10px;
+      font-family: var(--main-font);
+      .entreprise-img-container{
+        width:40%;
+        height: 30%;
+        margin-left: 30%;
+        margin-top: -20%;
+        -moz-box-shadow: 10px 10px 50px #ccc;
+        -webkit-box-shadow: 10px 10px 50px #ccc;
+        box-shadow: 10px 10px 50px #ccc;
+        border: solid 0.1px rgb(218, 218, 218);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .entreprise-img-container.flamantech{
+       background-image: url('/assets/img/flamantech.png');
+       background-size: 90%;
+      }
+      .entreprise-img-container.instavisit{
+       background-image: url('/assets/img/instavisit.png');
+       background-size: 72%;
+      }
+      .entreprise-img-container.dclix{
+       background-image: url('/assets/img/dclix.png');
+      }
+      .entreprise-img-container.expressJS{
+       background-image: url('/assets/img/nodeJs-badge.png');
+      }
+      .entreprise-name{
+        padding: 10px 0px 10px 0px;
+        font-size: 13px;
+        text-align: center;
+        color: var(--blue);
+      }
+      .info-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .info-item{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          color: var(--pink);
+          span{
+            font-size: 11px;
+          }
+          i{
+            color: var(--pink);
+            font-size: 24px;
+          }
+        }
+      }
+      .description-section{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        padding: 20px 12px 20px 12px;
+        height: 60%;
+        overflow-y: auto;
+        .line-description{
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          color: var(--dark-grey);
+          margin-bottom: 10px;
+          .square{
+            width: 10px;
+            height: 10px;
+            background-color: var(--dark-grey);
+            margin-right: 3px;
+          }
+ 
+        }
+      }
+      .technology-section{
+    
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        bottom: 0.8em;
+        right: 0.8em;
+        img{
+          width: 1.9em;
+          height:1.9em;
+          margin-left: 10px;
+         box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.43);
+         border-radius: 20%;
+        }
+        img:hover{
+          cursor: pointer;
+          transform : scale(1.25);
+        }
+    }}
+    .intern:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+  }
+ 
+ .internships-mobile{display: none;}
+
+ @media(max-width: 840px){
+    .internships{
+      display: none;
+      .intern{
+        margin-bottom: 50px;
+        width: 60vw;
+        height: 40vh;
+        .entreprise-img-container{
+          width:30%;
+          height: 50%;
+          margin-left: 30%;
+          margin-top: -10%;
+        }
+        
+      }
+    }
+    .internships-mobile{
+      display: block;
+      margin-top: 20px;
+      height: 50vh;
+      overflow-y: auto;
+      border-radius: 1%;
+      font-family: var(--main-font);
+      .intern{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        background-color: var(--nav-color);
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 0px 0px rgba(14, 14, 14, 0.2);
+        .entreprise-img-container{
+          padding: 15px;
+          flex: 1;
+          img{
+            margin-top:10%;
+            width: 95%;
+            height: 75%;
+          }
+        }
+        .inter-info{
+          flex: 4;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          .entreprise-name{
+            color: var(--blue);
+          }
+          .info-section{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-top: 10px;
+            .info-item{
+            color: var(--pink);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 8px;
+            span{
+              font-size: 11px;
+            }
+            i{
+              color: var(--pink);
+              font-size: 24px;
+            }
+          }
+          img{
+            width: 1.9em;
+            height:1.9em;
+            margin-left: 10px;
+           box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.43);
+           border-radius: 20%;
+          }
+          img:hover{
+            cursor: pointer;
+            transform : scale(1.25);
+          }
+          }
+          .description-section{
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            padding: 20px 12px 20px 12px;
+            height: 30%;
+            overflow-y: auto;
+            .line-description{
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              font-family: var(--main-font);
+              opacity: 1;
+              color: var(--dark-grey);
+              margin-bottom: 10px;
+              .square{
+                width: 10px;
+                height: 10px;
+                background-color: var(--dark-grey);
+                margin-right: 3px;
+              }
+     
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  @media(max-width: 628px){
+
+    .internships-mobile{
+      display: block;
+      margin-top: 20px;
+      height: 50vh;
+      overflow-y: auto;
+      border-radius: 1%;
+      font-family: var(--main-font);
+      .intern{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        background-color: var(--nav-color);
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 0px 0px rgba(14, 14, 14, 0.2);
+        .entreprise-img-container{
+          display: none;
+        }
+  
+  }
+    }}

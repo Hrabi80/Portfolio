@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { FreelanceComponent } from './experience/freelance/freelance.component';
+import { CommunityComponent } from './community/community.component';
+import { CertificationsComponent } from './experience/certifications/certifications.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { ExperienceComponent } from './experience/experience.component';
     NavbarComponent,
     SidebarComponent,
     AboutmeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    FreelanceComponent,
+    CommunityComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,

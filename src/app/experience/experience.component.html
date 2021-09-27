@@ -15,10 +15,10 @@
         'activated':sectionValue == 'freelance'}">
         <a>Freelance</a>
     </div>
-    <div class="element" (click)="sectionValue= 'skills'" [ngClass]="{
+    <!-- <div class="element" (click)="sectionValue= 'skills'" [ngClass]="{
         'activated':sectionValue == 'skills'}">
         <a>Skills</a>
-    </div>
+    </div> -->
     <div class="element" (click)="sectionValue= 'certification'" [ngClass]="{
         'activated':sectionValue == 'certification'}">
         <a>Certifications</a>
@@ -32,12 +32,13 @@
             'activated':sectionValue == 'internship'}">internships</button>
         <button (click)="sectionValue= 'freelance'" [ngClass]="{
             'activated':sectionValue == 'freelance'}">freelance</button>
+            <button (click)="sectionValue= 'certification'" [ngClass]="{
+                'activated':sectionValue == 'certification'}">certifications</button>
     </div>
     <div class="button-container-down">
-        <button (click)="sectionValue= 'skills'" [ngClass]="{
-            'activated':sectionValue == 'skills'}">skills</button>
-        <button (click)="sectionValue= 'certification'" [ngClass]="{
-            'activated':sectionValue == 'certification'}">certifications</button>
+        <!-- <button (click)="sectionValue= 'skills'" [ngClass]="{
+            'activated':sectionValue == 'skills'}">skills</button> -->
+        
     </div>
 </div>
 
@@ -309,12 +310,12 @@
         </div>
     </div>
 </div>
-<div class="internships-mobile">
+<div class="internships-mobile" *ngIf="sectionValue == 'internship'">
 
     <div class="intern">
-        <div class="entreprise-img-container">
+        <!-- <div class="entreprise-img-container">
             <img src="assets/img/gnext.png" alt="gnextIT">
-        </div> 
+        </div>  -->
         <div class="inter-info">
             <div class="entreprise-name">Gnext It</div>
             <div class="info-section">
@@ -469,3 +470,6 @@
 
 
 </div>
+
+<app-freelance *ngIf="sectionValue == 'freelance'"></app-freelance>
+<app-certifications *ngIf="sectionValue == 'certification'"></app-certifications>
