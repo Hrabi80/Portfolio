@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

@@ -6,9 +6,38 @@
     width: 96%;
     height: 96%;
     border-radius: 11px;
+    .portfolio-content{
+        width: 78%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+    .social-media-content{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 50%;
+        right: 2%;
+        .social-media-item{
+            height: 22px;
+            width: 22px;
+            margin-bottom: 10px;
+            opacity: .6;
+            cursor: pointer;
+        }
+    }
 }
-.portfolio-content{
-    width: 78%;
-    margin-left: 11%;
-    margin-right: 11%;
+@media(max-width:900px){
+    .screen-container{
+
+        .social-media-content{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            top: 10%;
+            right: 2%;
+        }
+    }
 }
+

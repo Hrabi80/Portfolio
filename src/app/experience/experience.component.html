@@ -1,0 +1,471 @@
+
+<div class="cover">
+<h2>Experience</h2>
+</div>
+<div class="experience-elements-container">
+    <div class="element" (click)="sectionValue= 'education'" [ngClass]="{
+        'activated':sectionValue == 'education'}">
+         <a>Education</a>
+    </div>
+    <div class="element" (click)="sectionValue= 'internship'" [ngClass]="{
+        'activated':sectionValue == 'internship'}">
+        <a>Internships</a>
+    </div>
+    <div class="element" (click)="sectionValue= 'freelance'" [ngClass]="{
+        'activated':sectionValue == 'freelance'}">
+        <a>Freelance</a>
+    </div>
+    <div class="element" (click)="sectionValue= 'skills'" [ngClass]="{
+        'activated':sectionValue == 'skills'}">
+        <a>Skills</a>
+    </div>
+    <div class="element" (click)="sectionValue= 'certification'" [ngClass]="{
+        'activated':sectionValue == 'certification'}">
+        <a>Certifications</a>
+    </div>    
+</div>
+<div class="experience-elements-container-mobile">
+    <div class="button-container-top">
+        <button (click)="sectionValue= 'education'" [ngClass]="{
+            'activated':sectionValue == 'education'}">education</button>
+        <button (click)="sectionValue= 'internship'" [ngClass]="{
+            'activated':sectionValue == 'internship'}">internships</button>
+        <button (click)="sectionValue= 'freelance'" [ngClass]="{
+            'activated':sectionValue == 'freelance'}">freelance</button>
+    </div>
+    <div class="button-container-down">
+        <button (click)="sectionValue= 'skills'" [ngClass]="{
+            'activated':sectionValue == 'skills'}">skills</button>
+        <button (click)="sectionValue= 'certification'" [ngClass]="{
+            'activated':sectionValue == 'certification'}">certifications</button>
+    </div>
+</div>
+
+<div class="universities" *ngIf="sectionValue == 'education'">
+    <div class="university">
+        <div class="faculty-image-section">
+            <img src="assets/img/Institut Supérieur des Sciences Appliquées et de Technologie de Sousse.png" alt="ISSATSo">
+        </div>
+        <div class="faculty-information">
+            <span class="university-name">
+                Higher Institute of Applied Sciences and Technology of Sousse
+            </span>
+            <span class="university-diploma">
+                National Engineering diploma
+            </span>
+            <div class="university-description">
+                Software engineering: software architecture tur adipisicing elit. Tempora nulla soluta error voluptatem commodi odit voluptatum, ipsa ratione harum provident ullam voluptatibus esse corporis, architecto necessitatibus, neque eligendi dicta sequi.
+            </div>
+            <div class="date-graduation">
+                <span>Start date : 15th September 2019</span>
+                <span>Graduation date : 15th July 2022</span>
+            </div>
+        </div>
+    </div>
+    <div class="university">
+        <div class="faculty-image-section">
+            <img src="assets/img/Politechnika-Białostocka.png" alt="Bialystok university">
+        </div>
+        <div class="faculty-information">
+            <span class="university-name">
+              Bialystok University of Technology
+            </span>
+            <span class="university-diploma">
+                Erasmus Exchange Program
+            </span>
+            <div class="university-description">
+                Software engineering: software architecture tur adipisicing elit. Tempora nulla soluta error voluptatem commodi odit voluptatum, ipsa ratione harum provident ullam voluptatibus esse corporis, architecto necessitatibus, neque eligendi dicta sequi.
+            </div>
+            <div class="date-graduation">
+                <span>Start date : September 2017</span>
+                <span>Graduation date : February 2018</span>
+            </div>
+        </div>
+    </div>
+    <div class="university">
+        <div class="faculty-image-section">
+            <img src="assets/img/nstitut supérieur d'informatique de mahdia.jpg" alt="ISIMa">
+        </div>
+        <div class="faculty-information">
+            <span class="university-name">
+                Higher Institute of Informatics of Mahdia
+            </span>
+            <span class="university-diploma">
+                Applied Bachelor of Computer Science
+            </span>
+            <div class="university-description">
+                Software engineering: software architecture tur adipisicing elit. Tempora nulla soluta error voluptatem commodi odit voluptatum, ipsa ratione harum provident ullam voluptatibus esse corporis, architecto necessitatibus, neque eligendi dicta sequi.
+            </div>
+            <div class="date-graduation">
+                <span>Start date : 15th September 2016</span>
+                <span>Graduation date : 15th July 2019</span>
+            </div>
+        </div> 
+       </div>
+       <div class="university-mobile">
+        <div class="faculty-image-section">
+            <img src="assets/img/Institut Supérieur des Sciences Appliquées et de Technologie de Sousse.png" alt="ISSATSo">
+        </div>
+        <div class="faculty-info">
+            <span class="university-name">
+                Higher Institute of Applied Sciences and Technology of Sousse
+            </span>
+            <span class="university-diploma">
+                National Engineering diploma
+            </span>
+            <div class="date-graduation">
+                <span>Start date : 15th September 2019</span>
+                <span>Graduation date : 15th July 2022</span>
+            </div>
+        </div>
+       </div>
+       <div class="university-mobile">
+        <div class="faculty-image-section">
+            <img src="assets/img/Politechnika-Białostocka.png" alt="Bialystok university">
+        </div>
+        <div class="faculty-info">
+            <span class="university-name">
+                Bialystok University of Technology
+            </span>
+            <span class="university-diploma">
+                Erasmus Exchange Program
+            </span>
+            <div class="date-graduation">
+                <span>Start date :September 2017</span>
+                <span>end date : February 2018</span>
+            </div>
+        </div>
+       </div>
+       <div class="university-mobile">
+        <div class="faculty-image-section">
+            <img src="assets/img/nstitut supérieur d'informatique de mahdia.jpg" alt="ISIMa">
+        </div>
+        <div class="faculty-info">
+            <span class="university-name">
+                Higher Institute of Informatics of Mahdia
+            </span>
+            <span class="university-diploma">
+                Applied Bachelor of Computer Science
+            </span>
+            <div class="date-graduation">
+                <span>Start date : 15th September 2016</span>
+                <span>Graduation date : 15th July 2019</span>
+            </div>
+        </div>
+       </div>
+</div>
+<div class="internships" *ngIf="sectionValue == 'internship'">
+    <div class="intern">
+        <div class="entreprise-img-container GnextIT">
+        </div>
+        <div class="entreprise-name">Gnext It</div>
+        <div class="info-section">
+            <div class="info-item">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>2 months</span>
+            </div>
+            <div class="info-item">
+               
+            </div>
+            <div class="info-item">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>E-commerce</span>
+            </div>
+        </div>
+        <div class="description-section">
+            <div class="line-description">
+                <div class="square"></div>
+                <span>E-commerce website allow shops to publish products</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Browse and product panel functionalities</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Customized filter</span>
+            </div>
+        </div>
+        <div class="technology-section">
+            <img src="assets/img/css-badge.png" alt="css">
+            <img src="assets/img/Angular-badge.png" alt="angular">
+        </div>
+    </div>
+
+    <div class="intern">
+        <div class="entreprise-img-container Smart-Business-Challenge">
+        </div>
+        <div class="entreprise-name">Smart Business Challenge</div>
+        <div class="info-section">
+            <div class="info-item">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>4 months</span>
+            </div>
+            <div class="info-item">
+               
+            </div>
+            <div class="info-item">
+                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                <span>Chart</span>
+            </div>
+        </div>
+        <div class="description-section">
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Projects and tasks managment applications.</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Gantt Diagram Implementation.</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Real time notifications and group chat</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>User roles and privileges managment.</span>
+            </div>
+        </div>
+        <div class="technology-section">
+            <img src="assets/img/Angular-badge.png" alt="angular">
+            <img src="assets/img/Symfony-badge.png" alt="symfony">
+            <img src="assets/img/materializecss-badge.png" alt="materializecss">
+        </div>
+    </div>
+
+    <div class="intern">
+        <div class="entreprise-img-container IdealVerre">
+        </div>
+        <div class="entreprise-name">IdealVerre</div>
+        <div class="info-section">
+            <div class="info-item">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>2 months</span>
+            </div>
+            <div class="info-item">
+               
+            </div>
+            <div class="info-item">
+                <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                <span>Products</span>
+            </div>
+        </div>
+        <div class="description-section">
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Client orders managment</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Customized admin dashboard</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Proucts and services CRUD</span>
+            </div>
+        </div>
+        <div class="technology-section">
+            <img src="assets/img/Angular-badge.png" alt="angular">
+            <img src="assets/img/nodeJs-badge.png" alt="NodeJs">
+            <img src="assets/img/Bootstrap-badge.png" alt="bootstrap">
+        </div>
+    </div>
+    <div class="intern">
+        <div class="entreprise-img-container Ibn-alhaythem-web-consulting">
+        </div>
+        <div class="entreprise-name">
+            IBH web conselting
+
+        </div>
+        <div class="info-section">
+            <div class="info-item">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>2 months</span>
+            </div>
+            <div class="info-item">
+               
+            </div>
+            <div class="info-item">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                <span>Dashboard</span>
+            </div>
+        </div>
+        <div class="description-section">
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Doctor panel dashboard</span>
+            </div>
+            <div class="line-description">
+                <div class="square"></div>
+                <span>Appointments management</span>
+            </div>
+        </div>
+        <div class="technology-section">
+            <img src="assets/img/php-badge.png" alt="php">
+            <img src="assets/img/Bootstrap-badge.png" alt="bootstrap">
+            <img src="assets/img/sql.png" alt="SQL">
+           
+        </div>
+    </div>
+</div>
+<div class="internships-mobile">
+
+    <div class="intern">
+        <div class="entreprise-img-container">
+            <img src="assets/img/gnext.png" alt="gnextIT">
+        </div> 
+        <div class="inter-info">
+            <div class="entreprise-name">Gnext It</div>
+            <div class="info-section">
+                <div class="info-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>2 months</span>
+                </div>
+                <div class="info-item">
+                   
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>E-commerce</span>
+                </div>
+                <img src="assets/img/css-badge.png" alt="css">
+                <img src="assets/img/Angular-badge.png" alt="angular">
+            </div>
+            <div class="description-section">
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>E-commerce website allow shops to publish products</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Browse and product panel functionalities</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Customized filter</span>
+                </div>
+            </div>
+        </div> 
+      </div>
+      <div class="intern">
+        <div class="entreprise-img-container">
+            <img src="assets/img/Smart Business Challenge.png" alt="Smart Business Challenge">
+        </div> 
+        <div class="inter-info">
+            <div class="entreprise-name">Smart Business Challenge</div>
+            <div class="info-section">
+                <div class="info-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>4 months</span>
+                </div>
+                <div class="info-item">
+                   
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                    <span>Chart</span>
+                </div>
+                <img src="assets/img/Angular-badge.png" alt="angular">
+                <img src="assets/img/Symfony-badge.png" alt="symfony">
+                <img src="assets/img/materializecss-badge.png" alt="materializecss">
+            </div>
+            <div class="description-section">
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Projects and tasks managment applications.</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Gantt Diagram Implementation.</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Real time notifications and group chat</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>User roles and privileges managment.</span>
+                </div>
+            </div>
+        </div> 
+      </div>
+      <div class="intern">
+        <div class="entreprise-img-container">
+            <img src="assets/img/IdealVerre.jpg" alt="IdealVerre">
+        </div> 
+        <div class="inter-info">
+            <div class="entreprise-name">IdealVerre</div>
+            <div class="info-section">
+                <div class="info-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>2 months</span>
+                </div>
+                <div class="info-item">
+                   
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                    <span>Products</span>
+                </div>
+                <img src="assets/img/Angular-badge.png" alt="angular">
+            <img src="assets/img/nodeJs-badge.png" alt="NodeJs">
+            <img src="assets/img/Bootstrap-badge.png" alt="bootstrap">
+            </div>
+            <div class="description-section">
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Client orders managment</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Customized admin dashboard</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Proucts and services CRUD</span>
+                </div>
+            </div>
+        </div> 
+      </div>
+    <div class="intern">
+        <div class="entreprise-img-container">
+            <img src="assets/img/Ibn alhaythem web-consulting .png" alt="Ibn alhaythem web-consulting">
+        </div> 
+        <div class="inter-info">
+            <div class="entreprise-name">IBH web conselting</div>
+            <div class="info-section">
+                <div class="info-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>2 months</span>
+                </div>
+                <div class="info-item">
+                   
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    <span>Dashboard</span>
+                </div>
+                <img src="assets/img/php-badge.png" alt="php">
+                <img src="assets/img/Bootstrap-badge.png" alt="bootstrap">
+                <img src="assets/img/sql.png" alt="SQL">
+            </div>
+            <div class="description-section">
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Client orders managment</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Customized admin dashboard</span>
+                </div>
+                <div class="line-description">
+                    <div class="square"></div>
+                    <span>Proucts and services CRUD</span>
+                </div>
+            </div>
+        </div> 
+      </div>
+
+
+</div>

@@ -115,8 +115,10 @@
         align-items: center;
         justify-content: space-between;
         .left-content{
+            display: flex;
+            align-items: center;
             img {
-                height: 34px;
+                height: 28px;
                 width: auto;
             }
         }
@@ -139,6 +141,7 @@
     background: #fcfcfc;
     border-radius: 12px;
     padding: 18px 3px 18px 3px;
+    z-index: 10;
     
     display: flex;
     flex-direction: column;
@@ -201,6 +204,7 @@
 }
 
 .sidebar-container-mobile{
+    z-index: 10;
     color: #282828;
     position: fixed;
     left: 3.5%;

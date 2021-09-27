@@ -1,0 +1,480 @@
+.cover{
+    height: 13vh;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:7%;
+    background-image: url('/assets/img/cover.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: 5;
+    text-align: center;
+    color: white;
+    font-family: var(--main-font);
+    animation-duration: 3s;
+    animation-name: showin;
+    h2{
+        font-weight:500;
+        font-size: 2rem;
+    }
+}
+
+.experience-elements-container{
+    animation-duration: 3s;
+    animation-name: showin;
+    margin-top: 13vh;
+    width: 100%;
+    height: 35px;
+    background-color: var(--nav-color);
+    box-shadow: 0px 2px 0px 0px rgba(14, 14, 14, 0.2);
+    border-radius:0px 0px 2px 2px;
+    font-family: var(--main-font);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-around;
+    .element{
+        cursor: pointer;
+    }
+    .element.activated{
+       // background-color: rgb(226, 13, 13);
+        font-size: 18px;
+        color: var(--blue);
+        border-bottom: solid 2px  var(--blue);
+    }
+}
+.experience-elements-container-mobile{
+  display: none;
+}
+
+.universities{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 62vh;
+  padding: 15px 0px 15px 0px ;
+  overflow: auto;
+  .university-mobile{
+    display: none;
+  }
+  .university{
+    background-color:white;
+    display: flex;
+    margin-bottom: 0px;
+    
+  //  box-shadow: 1px 1px 1px 1px rgb(201, 201, 201);
+    width: 98%;
+    .faculty-image-section{
+      flex:1;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 110px;
+        height: 70px;
+      }
+    }
+    .faculty-information{
+      padding: 15px;
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      .university-name{
+        padding: 2px 4px 2px 4px;
+        font-family: var(--main-font);
+        font-size: 0.8rem;
+        background-color: var(--blue);
+        color: white;
+        width:23rem;
+        opacity: 0.8;
+        box-shadow: 1px 1px 0px 0px rgb(70, 70, 70);
+      }
+      .university-diploma{
+        padding: 2px 4px 2px 4px;
+        font-family: var(--main-font);
+        font-size: 0.8rem;
+        background-color: var(--pink);
+        color: white;
+        width:14rem; 
+        opacity: 0.8;
+        box-shadow: 1px 1px 0px 0px rgb(70, 70, 70);
+      }
+      .university-description{
+        padding: 10px 0px 10px 0px;
+        font-size: 0.8rem;
+        font-family: var(--main-font);
+      }
+      .date-graduation{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 0.6rem;
+        font-family: var(--main-font);
+        color: rgb(15, 156, 34);
+      }
+    }
+  }
+}
+ .universities::-webkit-scrollbar {
+   width: 0px;
+ }
+.universities::-webkit-scrollbar-track {
+   background-color: rgb(219, 219, 219);
+   border-radius: 8%;
+
+ }
+ .universities::-webkit-scrollbar-thumb {
+  box-shadow: inset 8px 2px 10px var(--blue);
+
+ }
+
+ .internships{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 12vh;
+   .intern{
+     background-color: white;
+     position: relative;
+     width: 20vw;
+     height: 50vh;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     margin-right: 10px;
+     font-family: var(--main-font);
+     .entreprise-img-container{
+       width:40%;
+       height: 30%;
+       margin-left: 30%;
+       margin-top: -20%;
+       -moz-box-shadow: 10px 10px 50px #ccc;
+       -webkit-box-shadow: 10px 10px 50px #ccc;
+       box-shadow: 10px 10px 50px #ccc;
+       border: solid 0.1px rgb(218, 218, 218);
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+     .entreprise-img-container.GnextIT{
+      background-image: url('/assets/img/gnext.png');
+     }
+     .entreprise-img-container.Smart-Business-Challenge{
+      background-image: url('/assets/img/Smart Business Challenge.png');
+     }
+     .entreprise-img-container.IdealVerre{
+      background-image: url('/assets/img/IdealVerre.jpg');
+     }
+     .entreprise-img-container.Ibn-alhaythem-web-consulting{
+      background-image: url('/assets/img/Ibn alhaythem web-consulting .png');
+     }
+     .entreprise-name{
+       padding: 10px 0px 10px 0px;
+       font-size: 13px;
+       text-align: center;
+       color: var(--blue);
+     }
+     .info-section{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       .info-item{
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         color: var(--pink);
+         span{
+           font-size: 11px;
+         }
+         i{
+           color: var(--pink);
+           font-size: 24px;
+         }
+       }
+     }
+     .description-section{
+       display: flex;
+       align-items: left;
+       flex-direction: column;
+       padding: 20px 12px 20px 12px;
+       height: 30%;
+       overflow-y: auto;
+       .line-description{
+         display: flex;
+         align-items: center;
+         font-size: 12px;
+         color: var(--dark-grey);
+         margin-bottom: 10px;
+         .square{
+           width: 10px;
+           height: 10px;
+           background-color: var(--dark-grey);
+           margin-right: 3px;
+         }
+
+       }
+     }
+     .technology-section{
+   
+       position: absolute;
+       display: flex;
+       align-items: center;
+       justify-content: end;
+       bottom: 0.8em;
+       right: 0.8em;
+       img{
+         width: 1.9em;
+         height:1.9em;
+         margin-left: 10px;
+        box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.43);
+        border-radius: 20%;
+       }
+       img:hover{
+         cursor: pointer;
+         transform : scale(1.25);
+       }
+   }}
+   .intern:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+ }
+
+.internships-mobile{display: none;}
+@keyframes showin {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+@media(min-width: 701px) and (max-width:840px){
+  .experience-elements-container{
+    transform: translateX(30px);
+  }
+}
+@media(max-width: 840px){
+  .internships{
+    display: none;
+    .intern{
+      margin-bottom: 50px;
+      width: 60vw;
+      height: 40vh;
+      .entreprise-img-container{
+        width:30%;
+        height: 50%;
+        margin-left: 30%;
+        margin-top: -10%;
+      }
+      
+    }
+  }
+  .internships-mobile{
+    display: block;
+    margin-top: 20px;
+    height: 50vh;
+    overflow-y: auto;
+    border-radius: 1%;
+    font-family: var(--main-font);
+    .intern{
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
+      background-color: var(--nav-color);
+      margin-bottom: 15px;
+      box-shadow: 0px 2px 0px 0px rgba(14, 14, 14, 0.2);
+      .entreprise-img-container{
+        padding: 15px;
+        flex: 1;
+        img{
+          margin-top:10%;
+          width: 95%;
+          height: 75%;
+        }
+      }
+      .inter-info{
+        flex: 4;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        .entreprise-name{
+          color: var(--blue);
+        }
+        .info-section{
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          margin-top: 10px;
+          .info-item{
+          color: var(--pink);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-right: 8px;
+          span{
+            font-size: 11px;
+          }
+          i{
+            color: var(--pink);
+            font-size: 24px;
+          }
+        }
+        img{
+          width: 1.9em;
+          height:1.9em;
+          margin-left: 10px;
+         box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.43);
+         border-radius: 20%;
+        }
+        img:hover{
+          cursor: pointer;
+          transform : scale(1.25);
+        }
+        }
+        .description-section{
+          display: flex;
+          align-items: left;
+          flex-direction: column;
+          padding: 20px 12px 20px 12px;
+          height: 30%;
+          overflow-y: auto;
+          .line-description{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-family: var(--main-font);
+            opacity: 1;
+            color: var(--dark-grey);
+            margin-bottom: 10px;
+            .square{
+              width: 10px;
+              height: 10px;
+              background-color: var(--dark-grey);
+              margin-right: 3px;
+            }
+   
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width : 745px){
+  .universities{
+  //  justify-content: center;
+    height: 60vh;
+    overflow-y: 350;
+    .university{
+      display: none;
+    }
+    .university-mobile{
+      display: block;
+      width: 60vw;
+      height: 45vh;
+      background-color: var(--nav-color);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-family: var(--main-font);
+      box-shadow: 0px 2px 0px 0px rgba(14, 14, 14, 0.2);
+      .faculty-image-section{
+        
+        img{
+        margin: 10px;
+        height: 19vh;
+        width: 46vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+        
+      }
+      .faculty-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .university-name{
+          color: var(--blue);
+          font-size: 15px;
+          text-align: center;
+          padding: 10px;
+        }
+        .university-diploma{
+          color: var(--pink);
+          font-size: 15px;
+          text-align: center;
+          padding-bottom: 10px;
+        }
+        .date-graduation{
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          font-size: 0.8rem;
+          font-family: var(--main-font);
+          color: rgb(15, 156, 34);
+        }
+      }
+      
+    }
+  }
+  
+}
+@media(max-width : 530px){
+  .experience-elements-container{
+    display: none;
+  }
+  .cover{
+    height: 9vh;
+    h2{
+      font-weight:500;
+      font-size: 1.2rem;
+  }
+  }
+  .experience-elements-container-mobile{
+    animation-duration: 3s;
+    animation-name: showin;
+    margin-top: 11vh;
+    display: block;
+    font-family: var(--main-font);
+    .button-container-top{
+      display: flex;
+      padding: 10px 0px 16px 0px;
+      align-items: center;
+      justify-content: center;
+      button{
+        margin-left: 3px;
+        padding: 5px;
+        background-color: var(--nav-color);
+        border: solid 0.08px rgb(156, 156, 156);
+        border-radius: 7px;
+        box-shadow: 0px 0.5px 0px 0px rgb(179, 178, 178);
+      }
+      button.activated{
+        background-color: var(--blue);
+        color: white;
+      }   
+     }
+    .button-container-down{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button{
+        margin-left: 3px;
+        padding: 5px;
+        background-color: var(--nav-color);
+        border: solid 0.08px rgb(156, 156, 156);
+        border-radius: 7px;
+        box-shadow: 0px 0.5px 0px 0px rgb(179, 178, 178);
+      }
+      button.activated{
+        background-color: var(--blue);
+        color: white;
+      }   
+      
+    }
+  }
+}
