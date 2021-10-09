@@ -1,0 +1,19 @@
+.blog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: showin;
+    animation-duration: 3s;
+}
+
+
+@keyframes showin {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+

@@ -35,6 +35,8 @@
     align-items: center;
     font-size: 14px;
     justify-content: space-around;
+    animation-duration: 3s;
+    animation-name: showin;
     .element{
         cursor: pointer;
     }
@@ -56,6 +58,8 @@
   height: 62vh;
   padding: 15px 0px 15px 0px ;
   overflow: auto;
+  animation-duration: 3s;
+    animation-name: showin;
   .university-mobile{
     display: none;
   }
@@ -86,7 +90,8 @@
         padding: 2px 4px 2px 4px;
         font-family: var(--main-font);
         font-size: 0.8rem;
-        background-color: var(--blue);
+        background: linear-gradient(to right, var(--blue), #9198e5);
+       // background-color: var(--blue);
         color: white;
         width:23rem;
         opacity: 0.8;
@@ -136,6 +141,8 @@
    align-items: center;
    justify-content: center;
    margin-top: 12vh;
+   animation-duration: 3s;
+    animation-name: showin;
    .intern{
      background-color: white;
      position: relative;
@@ -241,6 +248,14 @@
  }
 
 .internships-mobile{display: none;}
+app-freelance{
+  animation-duration: 3s;
+    animation-name: showin;
+}
+app-certifications{
+  animation-duration: 3s;
+    animation-name: showin;
+}
 @keyframes showin {
     from {
       opacity: 0;

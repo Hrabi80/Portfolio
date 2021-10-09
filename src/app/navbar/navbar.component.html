@@ -13,7 +13,7 @@
                 <i class="fa fa-mobile" aria-hidden="true"></i>
                 (+216) 27 797 784
             </div>
-            <button>
+            <button routerLink="/contact-me">
                 contact me
             </button>
         </div>
@@ -40,19 +40,21 @@
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
         <span>experience</span>
     </div>
-    <div class="sidebar-item ">
+    <!-- <div class="sidebar-item ">
         <i class="fa fa-code" aria-hidden="true"></i>
         <span>portfolio</span>
-    </div>
-    <div class="sidebar-item ">
+    </div> -->
+    <div class="sidebar-item " routerLink="/communities" [ngClass]="{
+        'activated':currentRoute == '/communities'}">
         <i class="fa fa-users" aria-hidden="true"></i>
         <span>communities</span>
     </div>
-    <div class="sidebar-item ">
+    <div class="sidebar-item" routerLink="/blogs" [ngClass]="{
+        'activated':currentRoute == '/blogs'}">
         <i class="fa fa-pencil" aria-hidden="true"></i>
         <span>blogs</span>
     </div>
-    <div class="sidebar-item">
+    <div class="sidebar-item" routerLink="/contact-me">
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
         <span>contact me</span>
     </div>

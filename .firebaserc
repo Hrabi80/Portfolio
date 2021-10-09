@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "hrabi-portfolio"
+  },
+  "targets": {
+    "hrabi-portfolio": {
+      "hosting": {
+        "website": [
+          "hrabi-portfolio"
+        ]
+      }
+    }
   }
 }
